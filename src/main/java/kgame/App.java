@@ -45,7 +45,7 @@ public class App
         while (true) {
             screen.clear();
 
-            tg.putString(kx, ky, "hkrkekrkr");
+            tg.putString(kx, ky, "K");
             tg.putString(10, 20, hudtext);
 
             screen.refresh();
