@@ -1,4 +1,3 @@
 #!/bin/bash
 
-mvn compile
-mvn -q exec:java -Dexec.mainClass=kgame.App
+gnome-terminal --title="kgame-java" -q -e "mvn -q exec:java -Dexec.mainClass=kgame.App"
