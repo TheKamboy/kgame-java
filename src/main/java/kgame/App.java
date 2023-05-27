@@ -6,6 +6,7 @@ import java.io.IOException;
 // Terminal shit
 import com.googlecode.lanterna.graphics.TextGraphics;
 import com.googlecode.lanterna.input.KeyStroke;
+import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.screen.Screen;
 import com.googlecode.lanterna.screen.TerminalScreen;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
@@ -39,11 +40,12 @@ public class App
         Screen screen = new TerminalScreen(terminal);
         TextGraphics tg = terminal.newTextGraphics();
         terminal.setCursorVisible(false);
+        screen.clear();
 
         String hudtext = "";
 
         while (true) {
-            screen.clear();
+            terminal.clearScreen();
 
             tg.putString(kx, ky, "K");
             tg.putString(10, 20, hudtext);
@@ -53,11 +55,21 @@ public class App
             KeyStroke input = screen.readInput();
 
             if (input != null) {
-                hudtext = String.format("Character Info: %s", input.toString());
+                //hudtext = String.format("Character Info: %s", input.toString());
                 if (input.getCharacter() == 'w') {
-
+                    ky--;
+                }
+                else if (input.getCharacter() == 's') {
+                    ky++;
+                }
+                else if (input.getCharacter() == 'a') {
+                    kx--;
+                }
+                else if (input.getCharacter() == 'd') {
+                    kx++;
                 }
             }
         }
+        // screen.close();
     }
 }
