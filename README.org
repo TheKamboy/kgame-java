@@ -16,7 +16,7 @@ This is just a small project I'm working on and may become something in the futu
 It's based on a game me and my older brother (Keegan) would play outside when I was younger.
 
 * How to Play
-** Option 1
+** Option 1 (Linux Only)
 Go into [[https://github.com/TheKamboy/kgame-java/releases][Releases]], then select the version you want.
 
 Unzip the .zip
@@ -24,6 +24,9 @@ Unzip the .zip
 Then run the jar file (you will need the [[https://www.java.com/en/][Java Runtime Environment]] to be able to run this).
 
 If clicking on the jar file doesn't work run this command: ~java -jar kgame.jar~
+** Why Linux Only?
+I cannot figure out how to make it work properly on Windows.
+If you can figure it out, let me know! It would be helpful.
 
 * Code Info
 ** Packages
