@@ -7,7 +7,7 @@
 
 [[https://raw.githubusercontent.com/TheKamboy/kgame-rust/master/assets/images/githubscreennew.png]]
 
-WARNING: This project is in a =ALPHA= state and may not work as intended.
+WARNING: This version of the project has been archived...meet me at [[https://github.com/TheKamboy/kgame-rust][at the Rust version!]]
 Packages may get changed based on where I'm working on this (ex: Windows, Linux)
 
 * Info
